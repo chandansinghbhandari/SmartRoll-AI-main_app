@@ -305,6 +305,8 @@ def teacher_screen_login():
                 background-color: white !important;
                 color: #1a1a2e !important;
                 border-radius: 8px !important;
+                caret-color : #1a1a2e !important;
+                border : none !important;
             }
             
             .stHeading, h1, h3 {
