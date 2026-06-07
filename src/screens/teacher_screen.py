@@ -236,6 +236,20 @@ def teacher_tab_manage_subjects():
 
 
 def teacher_tab_attendance_records():
+    st.markdown("""
+        <style>
+            .stTextInput input {
+                background-color: white !important;
+                color: #1a1a2e !important;
+            }
+            
+            .stHeading, h1, h3 {
+                color: #1a1a2e !important;
+            }
+           
+        </style>
+    """, unsafe_allow_html=True)
+    
     st.header('Attendance Records')
 
     teacher_id = st.session_state.teacher_data['teacher_id']
