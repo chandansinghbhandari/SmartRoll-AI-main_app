@@ -320,6 +320,12 @@ def teacher_screen_login():
             .stTextInput label p {
                 color: #1a1a2e !important;
             }
+                
+            .stDivider hr{
+                border : none !important;
+                border-top : 1px solid #1a1a2e !important;
+                opacity : 0.3 !important;    
+            }
         </style>
     """, unsafe_allow_html=True)
     
@@ -378,6 +384,58 @@ def register_teacher(teacher_username, teacher_name, teacher_pass, teacher_pass_
     
 
 def teacher_screen_register():
+    st.markdown("""
+        <style>
+            /* Match cream/beige input background */
+            .stTextInput input {
+                background-color: #F5F0E8 !important;
+                color: #1a1a2e !important;
+                border: 1px solid #e0d8c8 !important;
+                border-radius: 8px !important;
+                caret-color: #1a1a2e !important;
+                cursor: text !important;
+                padding: 10px !important;
+            }
+            
+            /* Remove focus border */
+            .stTextInput input:focus {
+                border: 1px solid #c8bfaf !important;
+                outline: none !important;
+                box-shadow: none !important;
+            }
+            
+            /* Fix password eye icon button */
+            .stTextInput button {
+                background-color: #4A90D9 !important;
+                border-radius: 8px !important;
+                border: none !important;
+                color: white !important;
+            }
+            
+            /* Fix placeholder */
+            .stTextInput input::placeholder {
+                color: #999 !important;
+            }
+            
+            /* Fix labels */
+            .stTextInput label p {
+                color: #1a1a2e !important;
+            }
+            
+            /* Fix divider */
+            .stDivider hr {
+                border: none !important;
+                border-top: 1px solid #ddd !important;
+                opacity: 0.5 !important;
+            }
+            
+            /* Fix heading */
+            h1,  h3 {
+                color: #1a1a2e !important;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+    
     c1, c2 = st.columns(2, vertical_alignment='center', gap='xxlarge')
     with c1:
         header_dashboard()
