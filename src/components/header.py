@@ -20,7 +20,9 @@ def header_home():
 
 def header_dashboard():
 
-    logo_url = "app/static/img/app_logo.png"
+    from src.database.config import get_image_base64
+    logo_url = get_image_base64("static/img/app_logo.png")
+    
     st.markdown(f"""
         <div style="display:flex; align-items:center; justify-content:center; gap:10px">
             <img src='{logo_url}' style='height:85px;' />

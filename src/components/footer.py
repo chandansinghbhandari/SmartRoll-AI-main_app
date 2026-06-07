@@ -17,7 +17,8 @@ def footer_home():
                 """, unsafe_allow_html=True)
 
 def footer_dashboard():
-    logo_url = "static/img/my_logo.png"
+    from src.database.config import get_image_base64
+    logo_url = get_image_base64("static/img/my_logo.png")
     
     st.markdown(f"""
         <div style="margin-top:2rem; display:flex; gap:6px; justify-content:center; items-align:center">
