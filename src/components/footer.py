@@ -1,5 +1,8 @@
 import streamlit as st
+import pathlib
 
+BASE_DIR = pathlib.Path(__file__).parent.parent
+logo_url = str(BASE_DIR/ "static"/ "img"/"my_logo.png")
 
 def footer_home():
     logo_url = "static/img/my_logo.png"

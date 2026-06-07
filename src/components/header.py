@@ -1,9 +1,12 @@
 import streamlit as st
+import pathlib
 
+BASE_DIR = pathlib.Path(__file__).parent.parent
+logo_url = str(BASE_DIR/ "static"/ "img"/"app_logo.png")
 
 def header_home():
 
-    logo_url = "static/img/app_logo.png"
+    logo_url = "app/static/img/app_logo.png"
     
     st.markdown(f"""
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:30px; margin-top:30px">
@@ -16,7 +19,7 @@ def header_home():
 
 def header_dashboard():
 
-    logo_url = "static/img/app_logo.png"
+    logo_url = "app/static/img/app_logo.png"
     st.markdown(f"""
         <div style="display:flex; align-items:center; justify-content:center; gap:10px">
             <img src='{logo_url}' style='height:85px;' />
