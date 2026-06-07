@@ -7,6 +7,12 @@ from src.screens.student_screen import student_screen
 
 from src.components.dialog_auto_enroll import auto_enroll_dialog
 
+def load_css():
+    with open("static/css/style.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", 
+        unsafe_allow_html=True)
+
+        
 def main():
     st.set_page_config(
         page_title='SmarrRoll AI - Making Attendance faster using AI',
@@ -33,4 +39,6 @@ def main():
             st.rerun()
         if st.session_state.get('is_logged_in') and st.session_state.get('user_role') == 'student':
             auto_enroll_dialog(join_code)
+
+    
 main()

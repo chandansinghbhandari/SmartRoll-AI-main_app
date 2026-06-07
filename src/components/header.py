@@ -12,7 +12,7 @@ def header_home():
     st.markdown(f"""
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:30px; margin-top:30px">
             <img src='{logo_url}' style='height:100px;' />
-            <h1 style='text-align:center; color:#E0E3FF'>SNAP<br/>CLASS</h1>
+            <h1 style='text-align:center; color:#1a1a2e; font-weight:bold;'>SNAP<br/>CLASS</h1>
         </div>   
                 
                 """, unsafe_allow_html=True)
@@ -22,11 +22,11 @@ def header_dashboard():
 
     from src.database.config import get_image_base64
     logo_url = get_image_base64("static/img/app_logo.png")
-    
+
     st.markdown(f"""
         <div style="display:flex; align-items:center; justify-content:center; gap:10px">
             <img src='{logo_url}' style='height:85px;' />
-            <h2 style='text-align:left; color:#5865F2'>SNAP<br/>CLASS</h1>
+            <h2 style='text-align:left; color:#1a1a2e; font-weight:bold;'>SNAP<br/>CLASS</h1>
         </div>   
                 
                 """, unsafe_allow_html=True)

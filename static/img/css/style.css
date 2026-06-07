@@ -1,0 +1,15 @@
+/* Input fields */
+input {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Labels */
+label {
+    color: black !important;
+}
+
+/* Fix white text on white background */
+.stTextInput input {
+    color: #1a1a2e !important;
+}
