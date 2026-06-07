@@ -302,7 +302,7 @@ def teacher_screen_login():
     st.markdown("""
         <style>
             .stTextInput input {
-                background-color: #F5F0E8 !important;
+                background-color: white !important;
                 color: #1a1a2e !important;
                 border: 1px solid #e0d8c8 !important;
                 border-radius: 8px !important;
@@ -408,7 +408,7 @@ def teacher_screen_register():
     st.markdown("""
         <style>
             .stTextInput input {
-                background-color: #F5F0E8 !important;
+                background-color: white !important;
                 color: #1a1a2e !important;
                 border-radius: 8px !important;
                 caret-color : #1a1a2e !important;
