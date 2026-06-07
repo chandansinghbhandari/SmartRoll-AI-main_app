@@ -301,7 +301,6 @@ def login_teacher(username, password):
 def teacher_screen_login():
     st.markdown("""
         <style>
-            /* Match cream/beige input background */
             .stTextInput input {
                 background-color: #F5F0E8 !important;
                 color: #1a1a2e !important;
@@ -311,15 +310,15 @@ def teacher_screen_login():
                 cursor: text !important;
                 padding: 10px !important;
             }
+                
             
-            /* Remove focus border */
             .stTextInput input:focus {
                 border: 1px solid #c8bfaf !important;
                 outline: none !important;
                 box-shadow: none !important;
             }
+                
             
-            /* Fix password eye icon button */
             .stTextInput button {
                 background-color: #4A90D9 !important;
                 border-radius: 8px !important;
@@ -327,7 +326,7 @@ def teacher_screen_login():
                 color: white !important;
             }
             
-            /* Fix placeholder */
+                
             .stTextInput input::placeholder {
                 color: #999 !important;
             }
@@ -337,14 +336,14 @@ def teacher_screen_login():
                 color: #1a1a2e !important;
             }
             
-            /* Fix divider */
+                
             .stDivider hr {
                 border: none !important;
                 border-top: 1px solid #ddd !important;
                 opacity: 0.5 !important;
             }
             
-            /* Fix heading */
+                
             h1, h2, h3 {
                 color: #1a1a2e !important;
             }
@@ -409,7 +408,7 @@ def teacher_screen_register():
     st.markdown("""
         <style>
             .stTextInput input {
-                background-color: #F5FE8 !important;
+                background-color: #F5F0E8 !important;
                 color: #1a1a2e !important;
                 border-radius: 8px !important;
                 caret-color : #1a1a2e !important;
