@@ -299,6 +299,29 @@ def login_teacher(username, password):
 
     return False
 def teacher_screen_login():
+    st.markdown("""
+        <style>
+            .stTextInput input {
+                background-color: white !important;
+                color: #1a1a2e !important;
+                border: 1px solid #ddd !important;
+                border-radius: 8px !important;
+            }
+            
+            .stHeading, h1, h3 {
+                color: #1a1a2e !important;
+            }
+            
+            .stTextInput input::placeholder {
+                color: #888 !important;
+            }
+            
+            .stTextInput label p {
+                color: #1a1a2e !important;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+    
     c1, c2 = st.columns(2, vertical_alignment='center', gap='xxlarge')
     with c1:
         header_dashboard()
@@ -312,7 +335,7 @@ def teacher_screen_login():
     st.space()
 
 
-    teacher_username = st.text_input("Enter username", placeholder='ananyaroy')
+    teacher_username = st.text_input("Enter username", placeholder='Chandan singh')
 
     teacher_pass = st.text_input("Enter password", type='password', placeholder="Enter password")
 
@@ -370,9 +393,9 @@ def teacher_screen_register():
     st.space()
 
     
-    teacher_username = st.text_input("Enter username", placeholder='ananyaroy')
+    teacher_username = st.text_input("Enter username", placeholder='Chandan Singh')
 
-    teacher_name = st.text_input("Enter name", placeholder='Ananya Roy')
+    teacher_name = st.text_input("Enter name", placeholder='Chandan Singh')
 
     teacher_pass = st.text_input("Enter password", type='password', placeholder="Enter password")
 
