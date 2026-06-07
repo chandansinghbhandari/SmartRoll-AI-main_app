@@ -304,7 +304,6 @@ def teacher_screen_login():
             .stTextInput input {
                 background-color: white !important;
                 color: #1a1a2e !important;
-                border: 1px solid #ddd !important;
                 border-radius: 8px !important;
             }
             
