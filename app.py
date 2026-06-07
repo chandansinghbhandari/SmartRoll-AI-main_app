@@ -7,15 +7,15 @@ from src.screens.student_screen import student_screen
 
 from src.components.dialog_auto_enroll import auto_enroll_dialog
 
-def load_css():
-    with open("static/css/style.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", 
-        unsafe_allow_html=True)
+# def load_css():
+#     with open("static/css/style.css") as f:
+#         st.markdown(f"<style>{f.read()}</style>", 
+#         unsafe_allow_html=True)
 
-        
+
 def main():
     st.set_page_config(
-        page_title='SmarrRoll AI - Making Attendance faster using AI',
+        page_title='SmartRoll AI - Making Attendance faster using AI',
         page_icon= "static/img/app_logo.png"
     )
     if 'login_type' not in st.session_state:
