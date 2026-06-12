@@ -236,19 +236,19 @@ def teacher_tab_manage_subjects():
 
 
 def teacher_tab_attendance_records():
-    st.markdown("""
-        <style>
-            .stTextInput input {
-                background-color: white !important;
-                color: #1a1a2e !important;
-            }
+    # st.markdown("""
+    #     <style>
+    #         .stTextInput input {
+    #             background-color: white !important;
+    #             color: #1a1a2e !important;
+    #         }
             
-            .stHeading, h1, h3 {
-                color: #1a1a2e !important;
-            }
+    #         .stHeading, h1, h3 {
+    #             color: #1a1a2e !important;
+    #         }
            
-        </style>
-    """, unsafe_allow_html=True)
+    #     </style>
+    # """, unsafe_allow_html=True)
     
     st.header('Attendance Records')
 
@@ -313,56 +313,56 @@ def login_teacher(username, password):
 
     return False
 def teacher_screen_login():
-    st.markdown("""
-        <style>
-            .stTextInput input {
-                background-color: white !important;
-                color: #1a1a2e !important;
-                border: 1px solid #e0d8c8 !important;
-                border-radius: 8px !important;
-                caret-color: #1a1a2e !important;
-                cursor: text !important;
-                padding: 10px !important;
-            }
+    # st.markdown("""
+    #     <style>
+    #         .stTextInput input {
+    #             background-color: white !important;
+    #             color: #1a1a2e !important;
+    #             border: 1px solid #e0d8c8 !important;
+    #             border-radius: 8px !important;
+    #             caret-color: #1a1a2e !important;
+    #             cursor: text !important;
+    #             padding: 10px !important;
+    #         }
                 
             
-            .stTextInput input:focus {
-                border: 1px solid #c8bfaf !important;
-                outline: none !important;
-                box-shadow: none !important;
-            }
+    #         .stTextInput input:focus {
+    #             border: 1px solid #c8bfaf !important;
+    #             outline: none !important;
+    #             box-shadow: none !important;
+    #         }
                 
             
-            .stTextInput button {
-                background-color: #4A90D9 !important;
-                border-radius: 8px !important;
-                border: none !important;
-                color: white !important;
-            }
+    #         .stTextInput button {
+    #             background-color: #4A90D9 !important;
+    #             border-radius: 8px !important;
+    #             border: none !important;
+    #             color: white !important;
+    #         }
             
                 
-            .stTextInput input::placeholder {
-                color: #999 !important;
-            }
+    #         .stTextInput input::placeholder {
+    #             color: #999 !important;
+    #         }
             
-            /* Fix labels */
-            .stTextInput label p {
-                color: #1a1a2e !important;
-            }
-            
-                
-            .stDivider hr {
-                border: none !important;
-                border-top: 1px solid #ddd !important;
-                opacity: 0.5 !important;
-            }
+    #         /* Fix labels */
+    #         .stTextInput label p {
+    #             color: #1a1a2e !important;
+    #         }
             
                 
-            h1, h2, h3 {
-                color: #1a1a2e !important;
-            }
-        </style>
-    """, unsafe_allow_html=True)
+    #         .stDivider hr {
+    #             border: none !important;
+    #             border-top: 1px solid #ddd !important;
+    #             opacity: 0.5 !important;
+    #         }
+            
+                
+    #         h1, h2, h3 {
+    #             color: #1a1a2e !important;
+    #         }
+    #     </style>
+    # """, unsafe_allow_html=True)
     
     c1, c2 = st.columns(2, vertical_alignment='center', gap='xxlarge')
     with c1:
@@ -419,30 +419,30 @@ def register_teacher(teacher_username, teacher_name, teacher_pass, teacher_pass_
     
 
 def teacher_screen_register():
-    st.markdown("""
-        <style>
-            .stTextInput input {
-                background-color: white !important;
-                color: #1a1a2e !important;
-                border-radius: 8px !important;
-                caret-color : #1a1a2e !important;
-                border : none !important;
-            }
+    # st.markdown("""
+    #     <style>
+    #         .stTextInput input {
+    #             background-color: white !important;
+    #             color: #1a1a2e !important;
+    #             border-radius: 8px !important;
+    #             caret-color : #1a1a2e !important;
+    #             border : none !important;
+    #         }
             
-            .stHeading, h1, h3 {
-                color: #1a1a2e !important;
-            }
+    #         .stHeading, h1, h3 {
+    #             color: #1a1a2e !important;
+    #         }
             
-            .stTextInput input::placeholder {
-                color: #888 !important;
-            }
+    #         .stTextInput input::placeholder {
+    #             color: #888 !important;
+    #         }
             
-            .stTextInput label p {
-                color: #1a1a2e !important;
-            }
+    #         .stTextInput label p {
+    #             color: #1a1a2e !important;
+    #         }
            
-        </style>
-    """, unsafe_allow_html=True)
+    #     </style>
+    # """, unsafe_allow_html=True)
     
     c1, c2 = st.columns(2, vertical_alignment='center', gap='xxlarge')
     with c1:
