@@ -28,7 +28,7 @@ def home_screen():
         <h2 style="color: black; font-weight: bold;">
             I'm Teacher</h2> 
         #         """, unsafe_allow_html=True)
-        st.header("I'm a Teacher")
+        # st.header("I'm a Teacher")
         st.image("https://i.ibb.co/CsmQQV6X/mascot-prof.png", width=145)
         if st.button('Teacher Portal', type='primary', icon=':material/arrow_outward:', icon_position='right'):
             st.session_state['login_type']='teacher'
