@@ -10,6 +10,7 @@ from src.pipelines.face_pipeline import predict_attendance, get_face_embeddings,
 from src.pipelines.voice_pipeline import get_voice_embedding
 from src.database.db import get_all_students, create_student, get_student_subjects, get_student_attendance, unenroll_student_to_subject
 import time
+from functools import partial
 
 from src.components.dialog_enroll import enroll_dialog
 from src.components.subject_card import subject_card
@@ -68,7 +69,7 @@ def student_dashboard():
 
         stats = stats_map.get(sid,{"total":0, "attended": 0} )
         def unenroll_button():
-                if st.button("Unenroll from tihs course", type='tertiary', width='stretch', icon=':material/delete_forever:'):
+                if st.button("Unenroll from this course", type='tertiary', width='stretch', icon=':material/delete_forever:'):
                     unenroll_student_to_subject(student_id, sid)
                     st.toast(f'Unenrolled from {sub['name']} successfully!')
                     st.rerun()
@@ -83,7 +84,7 @@ def student_dashboard():
                     ('📅', 'Total', stats['total']),
                     ('✅', 'Attended', stats['attended']),
                 ],
-                footer_callback=unenroll_button
+                footer_callback=partial(unenroll_button,sub['subject_id'])
             )
     footer_dashboard()
 
