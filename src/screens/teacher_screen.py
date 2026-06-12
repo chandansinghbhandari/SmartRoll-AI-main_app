@@ -45,9 +45,7 @@ def teacher_dashboard():
     with c1:
         header_dashboard()
     with c2:
-        st.markdown(f"""<h3> class ="welcome-text">Welcome, {teacher_data['name']}
-            </h3>
-        """,unsafe_allow_html=True)
+        st.subheader(f"""Welcome, {teacher_data['name']} """)
         if st.button("Logout", type='secondary', key='loginbackbtn', shortcut="control+backspace"):
             st.session_state['is_logged_in'] = False
             del st.session_state.teacher_data 
@@ -96,10 +94,7 @@ def teacher_dashboard():
 
 def teacher_tab_take_attendance():
     teacher_id = st.session_state.teacher_data['teacher_id']
-    st.markdown(f"""<h3> class ="welcome-text">Take AI Attendance
-            </h3>
-        """,unsafe_allow_html=True)
-
+    st.header('Take AI Attendance')
 
     if 'attendance_images' not in st.session_state:
         st.session_state.attendance_images = []
