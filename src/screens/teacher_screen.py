@@ -93,6 +93,7 @@ def teacher_dashboard():
     footer_dashboard()
 
 def teacher_tab_take_attendance():
+    results, attendance_to_log  = [], []
     teacher_id = st.session_state.teacher_data['teacher_id']
     st.header('Take AI Attendance')
 
