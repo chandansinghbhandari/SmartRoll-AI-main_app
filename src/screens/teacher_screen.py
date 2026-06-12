@@ -25,7 +25,12 @@ from src.components.dialog_voice_attendance import voice_attendance_dialog
 def teacher_screen():
 
     style_background_dashboard()
+    teacher_dashboard()
+    teacher_screen_register()
     style_base_layout()
+    teacher_tab_attendance_records()
+    teacher_screen_login()
+    
 
     if "teacher_data" in st.session_state:
         teacher_dashboard()
@@ -44,7 +49,9 @@ def teacher_dashboard():
     with c1:
         header_dashboard()
     with c2:
-        st.subheader(f"""Welcome, {teacher_data['name']} """)
+        st.markdown(f"""<h3> class ="welcome-text">Welcome, {teacher_data['name']}
+            </h3>
+        """,unsafe_allow_html=True)
         if st.button("Logout", type='secondary', key='loginbackbtn', shortcut="control+backspace"):
             st.session_state['is_logged_in'] = False
             del st.session_state.teacher_data 

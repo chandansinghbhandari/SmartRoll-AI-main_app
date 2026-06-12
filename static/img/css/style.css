@@ -13,3 +13,7 @@ label {
 .stTextInput input {
     color: #1a1a2e !important;
 }
+
+.welcome-text {
+    color : black;
+}

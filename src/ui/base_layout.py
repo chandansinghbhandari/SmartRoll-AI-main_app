@@ -46,6 +46,15 @@ def teacher_dashboard():
                 }
 
 """, unsafe_allow_html=True)
+    
+def student_dashboard():
+    st.markdown("""
+        <style>
+                .stsubheader{
+                    background : black !important;
+                }
+
+""", unsafe_allow_html=True)
 
 def style_base_layout():
 # asdasd
