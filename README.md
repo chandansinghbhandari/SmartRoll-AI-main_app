@@ -208,23 +208,33 @@ Student / Teacher
 
 ### Landing Page
 
-Add screenshot here
+<p align="center">
+  <img src="./static/landing-preview.png" width="100%">
+</p>
 
 ### Teacher Dashboard
 
-Add screenshot here
+<p align="center">
+  <img src="./static/teacher-dashboard-preview.png" width="100%">
+</p>
 
 ### Student Dashboard
 
-Add screenshot here
+<p align="center">
+  <img src="./static/student-dashboard-preview.png" width="100%">
+</p>
 
 ### Attendance Analytics
 
-Add screenshot here
+<p align="center">
+  <img src="./static/attendance-analytics-preview.png" width="100%">
+</p>
 
 ### QR Enrollment System
 
-Add screenshot here
+<p align="center">
+  <img src="./static/QR-enrollment-preview.png" width="100%">
+</p>
 
 ---
 
@@ -236,7 +246,13 @@ https://smart-roll-ai-landing.vercel.app/
 
 ### Main Application
 
-https://smartroll-ai-mainapp-cnymqxqmfch249ev6mhkng.streamlit.app/
+https://smartroll-ai-mainapp-cnymqxqmfch249ev6mhkng.streamlit.app
+
+## 🌐 Official Landing Page
+
+Explore the SmartRoll AI website:
+
+➡️ https://github.com/chandansinghbhandari/SmartRoll-AI-Landing
 
 ---
 
