@@ -209,31 +209,31 @@ Student / Teacher
 ### Landing Page
 
 <p align="center">
-  <img src="./static/landing-preview.png" width="100%">
+  <img src="./static/img/landing-preview.png" width="100%">
 </p>
 
 ### Teacher Dashboard
 
 <p align="center">
-  <img src="./static/teacher-dashboard-preview.png" width="100%">
+  <img src="./static/img/teacher-dashboard-preview.png" width="100%">
 </p>
 
 ### Student Dashboard
 
 <p align="center">
-  <img src="./static/student-dashboard-preview.png" width="100%">
+  <img src="./static/img/student-dashboard-preview.png" width="100%">
 </p>
 
 ### Attendance Analytics
 
 <p align="center">
-  <img src="./static/attendance-analytics-preview.png" width="100%">
+  <img src="./static/img/attendance-analytics-preview.png" width="100%">
 </p>
 
 ### QR Enrollment System
 
 <p align="center">
-  <img src="./static/QR-enrollment-preview.png" width="100%">
+  <img src="./static/img/QR-enrollment-preview.png" width="100%">
 </p>
 
 ---
